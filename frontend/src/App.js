@@ -3,13 +3,19 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import axios from 'axios';
 import './App.css';
 
+// Import components
+import Jobs from './components/Jobs';
+import Profile from './components/Profile';
+import Network from './components/Network';
+import Posts from './components/Posts';
+
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
 
 // Auth Context
 const AuthContext = createContext();
 
-const useAuth = () => {
+export const useAuth = () => {
   const context = useContext(AuthContext);
   if (!context) {
     throw new Error('useAuth must be used within an AuthProvider');
