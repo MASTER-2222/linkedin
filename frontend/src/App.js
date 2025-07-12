@@ -659,6 +659,20 @@ const Dashboard = () => {
                 </svg>
                 <h3 className="mt-2 text-sm font-medium text-gray-900">No activity yet</h3>
                 <p className="mt-1 text-sm text-gray-500">Start connecting and posting to see activity here.</p>
+                <div className="mt-4 space-x-4">
+                  <a
+                    href="/posts"
+                    className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-pink-500 hover:bg-pink-600"
+                  >
+                    Create Post
+                  </a>
+                  <a
+                    href="/network"
+                    className="inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50"
+                  >
+                    Find Connections
+                  </a>
+                </div>
               </div>
             )}
           </div>
