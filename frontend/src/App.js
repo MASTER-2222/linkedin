@@ -702,6 +702,38 @@ function App() {
                 </ProtectedRoute>
               } 
             />
+            <Route 
+              path="/jobs" 
+              element={
+                <ProtectedRoute>
+                  <Jobs />
+                </ProtectedRoute>
+              } 
+            />
+            <Route 
+              path="/network" 
+              element={
+                <ProtectedRoute>
+                  <Network />
+                </ProtectedRoute>
+              } 
+            />
+            <Route 
+              path="/posts" 
+              element={
+                <ProtectedRoute>
+                  <Posts />
+                </ProtectedRoute>
+              } 
+            />
+            <Route 
+              path="/profile" 
+              element={
+                <ProtectedRoute>
+                  <Profile />
+                </ProtectedRoute>
+              } 
+            />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </div>
