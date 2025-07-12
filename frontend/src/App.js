@@ -128,6 +128,9 @@ const Navigation = () => {
                 <a href="/network" className="text-gray-700 hover:text-pink-500 px-3 py-2 rounded-md text-sm font-medium">
                   Network
                 </a>
+                <a href="/posts" className="text-gray-700 hover:text-pink-500 px-3 py-2 rounded-md text-sm font-medium">
+                  Posts
+                </a>
                 <a href="/profile" className="text-gray-700 hover:text-pink-500 px-3 py-2 rounded-md text-sm font-medium">
                   Profile
                 </a>
